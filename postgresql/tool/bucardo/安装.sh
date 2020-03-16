@@ -1,5 +1,6 @@
 bucardo是一个异步数据框架软件。
 他需要在你正式安装前安装 Perl 的 DBI 软件。
+并且要求你在数据库里有pgperl扩展。（源代码编译configure 的时候 需要加 --with-perl 即可获得这个扩展。）
 
 官方网站，
 https://bucardo.org/Bucardo/
@@ -26,6 +27,15 @@ DBI安装命令，在README里有写
    make test (but see below first)
    make install
 
+ 
+bucardo安装命令 
+   perl Makefile.PL
+   make
+   make test 
+  sudo  make install
 
-其实安装bucardo也是这几个命令。
-DBI和bucardo本用户即可安装。
+安装完成后，需要在bucardo的压缩包里执行安装数据库命令，（我当时的数据库是开启的）
+bucardo install 
+
+
+
