@@ -16,3 +16,5 @@ Python 2.7.5
 
 
 注：pg可以支持python2 或者python3 。
+重新编译configure文件，不一定能解决问题，还要initdb初始化。
+如果是只有python2 ，那么扩展就会有plpython2u  plpythonu 
