@@ -1,3 +1,6 @@
+安装命令[postgres@hp apache-madlib-1.16-src]$ src/bin/madpack  -p postgres install  
+数据库需要开启。
+
 madpack.py: ERROR : Failed executing m4 on ... 
 这个原因就是没有安装m4 这个软件，
 用[root@hp postgres]# yum install m4  解决
@@ -13,3 +16,6 @@ Requirements for installing MADlib:
     PostgreSQL (64-bit) 9.2+ with plpython support enabled. Note: plpython may not be enabled in Postgres by default.
 来源：
     https://cwiki.apache.org/confluence/display/MADLIB/Installation+Guide
+
+
+
