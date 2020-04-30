@@ -4,6 +4,13 @@ create table tp1  partition of t  (id  primary key,  n  , tt   ) for values from
 create table tp2  partition of t  (id  primary key,  n  , tt   ) for values from ('2020-02-01') to ('2020-03-01');   
 create table tp3  partition of t  (id  primary key,  n  , tt   ) for values from ('2020-03-01') to ('2020-04-01');   
 
+--当然可以不写列
+
+create table t (i date ,v varchar(10) ) partition by range(i);
+create table t1 partition of t for values from ('2020-01-01') to ('2020-01-02');
+
+
+
 列表分区：
 create table tl     (id int   , f  varchar(10) , t date) partition by list (f );  
 create table tl0 partition of tl  (id  primary key, f , t ) for values in (0);  
