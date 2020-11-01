@@ -36,3 +36,4 @@ only postgresql  function
 	check_datatype           	检查给的类型是否正确，是what_type的类似的东西。
 	define_round             	自定义数值长度进位数值。
 	string_index			随意找字符串
+	drop_table_2_recyclebin         将指定的表改名并记录，仿oracle的闪回表（表的回收站）
