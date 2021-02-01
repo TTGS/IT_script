@@ -37,3 +37,4 @@ only postgresql  function
 	define_round             	自定义数值长度进位数值。
 	string_index			随意找字符串
 	drop_table_2_recyclebin         将指定的表改名并记录，仿oracle的闪回表（表的回收站）
+	cust_orderby                    自定义排序，给出需要查找的列，排列的顺序和排列顺序的分割符号，返回数字，可以实现自动排序。
